@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 
 import os
@@ -6,8 +6,8 @@ from argparse import ArgumentParser
 
 
 parser = ArgumentParser()
-parser.add_argument('-s', '--source', help='Путь содержащий иерархию, которую нужно удалить')
-parser.add_argument('-r', '--remove', help='Путь, относительно которого будут удаляться файлы')
+parser.add_argument('-s', '--source', help='Путь содержащий иерархию, которую нужно удалить', required=True)
+parser.add_argument('-r', '--remove', help='Путь, относительно которого будут удаляться файлы', required=True)
 
 
 args = parser.parse_args()
